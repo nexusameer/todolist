@@ -1,3 +1,6 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
 <h1><a href="{% url 'tasks' %}">GO BACK</a></h1>
 <h1>Delete : {{task}}</h1>
 
@@ -6,3 +9,4 @@
     <p>Are you sure you wanna delete</p>
     <input type="submit" value="delete">
 </form>
+{% endblock %}
